@@ -1,0 +1,9 @@
+{
+	"name": "handsonyashasvidf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cf2c124d-376b-4bc5-b60b-9993f9f19fe5",
+		"tenantId": "f958e84a-92b8-439f-a62d-4f45996b6d07"
+	}
+}
