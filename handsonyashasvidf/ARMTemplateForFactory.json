@@ -242,7 +242,10 @@
 								"referenceName": "dataflowsummary",
 								"type": "DataFlowReference",
 								"parameters": {
-									"dataflow_param_fiscalyear": 2020
+									"dataflow_param_fiscalyear": {
+										"value": "@pipeline().parameters.global_fiscalyear",
+										"type": "Expression"
+									}
 								},
 								"datasetParameters": {
 									"source2020payroll": {},
@@ -262,6 +265,12 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"parameters": {
+					"global_fiscalyear": {
+						"type": "int",
+						"defaultValue": 2020
+					}
 				},
 				"annotations": [],
 				"lastPublishTime": "2025-11-21T10:51:01Z"
